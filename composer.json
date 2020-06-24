@@ -37,7 +37,7 @@
                 "FredBradley\\LaravelImcapi\\LaravelImcapiServiceProvider"
             ],
             "aliases": {
-                "LaravelImcapi": "FredBradley\\LaravelImcapi\\Facades\\LaravelImcapi"
+                "Imcapi": "FredBradley\\LaravelImcapi\\Facades\\LaravelImcapi"
             }
         }
     }
