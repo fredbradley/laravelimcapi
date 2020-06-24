@@ -1,0 +1,44 @@
+{
+    "name": "fredbradley/laravelimcapi",
+    "description": "A Laravel Facade Wrapper for the IMCAPI package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fred Bradley",
+            "email": "code@fredbradley.uk",
+            "homepage": "https://fredbradley.uk"
+        }
+    ],
+    "homepage": "https://github.com/fredbradley/laravelimcapi",
+    "keywords": ["Laravel", "LaravelImcapi"],
+    "require": {
+        "illuminate/support": "~5|~6|~7",
+        "fredbradley/imcapi": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3|~4",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FredBradley\\LaravelImcapi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FredBradley\\LaravelImcapi\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FredBradley\\LaravelImcapi\\LaravelImcapiServiceProvider"
+            ],
+            "aliases": {
+                "LaravelImcapi": "FredBradley\\LaravelImcapi\\Facades\\LaravelImcapi"
+            }
+        }
+    }
+}
